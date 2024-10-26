@@ -14,3 +14,5 @@ Now, if we define `NAME` on the `cmake` command line using the `-D` option
 `$ cmake -DNAME=Newman -P hello.txt`
 `Hello Newman!`
 
+-DNAME --> Varibale name
+
