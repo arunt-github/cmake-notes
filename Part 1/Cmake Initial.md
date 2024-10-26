@@ -16,3 +16,8 @@ Now, if we define `NAME` on the `cmake` command line using the `-D` option
 
 -DNAME --> Varibale name
 
+##### **Define a variable inside a script**
+
+`set(THING "funk")`
+`message("We want the ${THING}!")`
+
