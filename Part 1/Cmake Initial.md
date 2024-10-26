@@ -21,3 +21,23 @@ Now, if we define `NAME` on the `cmake` command line using the `-D` option
 `set(THING "funk")`
 `message("We want the ${THING}!")`
 
+##### **FLow Control**
+
+**If**
+
+```
+if(WIN32)
+    message("You're running CMake on Windows.")
+endif()
+```
+
+**While**
+`set(A "1")`
+`set(B "1")`
+`while(A LESS "1000000")`
+    `message("${A}")                 # Print A`
+    `math(EXPR T "${A} + ${B}")      # Add the numeric values of A and B; store result in T`
+    `set(A "${B}")                   # Assign the value of B to A`
+    `set(B "${T}")                   # Assign the value of T to B`
+`endwhile()`
+
